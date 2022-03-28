@@ -1,0 +1,104 @@
+.header{
+    width: 100%;
+    font-family: serif;
+    background: #fff;
+    border-bottom: 1px solid;
+    position: relative;
+    &__container{
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+    }
+    &__logo{
+        font-size: 37px;
+        color:#0077b6;
+        flex: 1 1 auto;
+        font-weight: 800;
+    }
+    &__burger{
+        width: 40px;
+        height: 40px;
+        padding-top: 10px;
+        display: none;
+        span{
+            display: block;
+            margin-bottom: 10px;
+            height: 2px;
+            background: #000;
+        }
+    }
+    &__menu{
+        flex:0 1 400px;
+      
+        &-list{
+            display: flex;
+            gap: 40px;
+        }
+        &-link{
+           
+            color:#0077b6;
+            font-size: 20px;
+            padding:10px 0;
+            display: inline-block;
+            width: 100%;
+            transition:  all 300ms ease-in;
+            border-bottom: 0px solid #0077b6;
+         
+            &:hover{
+                border-bottom: 1px solid #0077b6;
+            }
+        }
+    }
+
+
+    @media (max-width:768px) {
+        &__menu{
+            flex:unset;
+            position: fixed;
+            top:0;
+            left:-80%;
+            width: 70%;
+            height: 100vh;
+            background: white;
+            padding-top: 100px;
+            transition: all 300ms ease-in;
+           
+            &-list{
+                display: block;
+                gap: unset;
+            }
+            &-item{
+                margin: 40px;
+                
+            }
+            &-link{
+              
+               text-align: center;
+              
+                transition:all 200ms ease-in;
+               &:hover{
+                   background: #0077b6;
+                   color:white;
+                   border-bottom:unset ;
+               }
+            }
+        }
+        &__burger{
+            display: block;
+            cursor: pointer;
+            transition:all 300ms ease;
+            &:hover{
+                width: 35px;
+            }
+        }
+        &__logo{
+            font-size: 30px;
+           
+        }
+    }
+}
+
+
+.open-menu{
+    left: 0;
+}

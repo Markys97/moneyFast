@@ -1,0 +1,62 @@
+.baner{
+    width: 100%;
+    background: #03045e;
+    font-family: serif;
+    &__container{
+       
+        
+    }
+    &__row{
+        display: flex;
+        min-height: 600px;
+        align-items: center;
+        gap: 40px;
+    }
+    &__img{
+        height: 450px;
+        flex: 700px;
+        border:1px solid white;
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+           
+        }
+    }
+    &__body{
+        flex:0 1 600px ;
+        margin-bottom: 20px;
+    }
+    &__title{
+        margin-bottom: 20px;
+        color:white;
+        font-size: 35px;
+    }
+    &__text{
+        color:white;
+        line-height: 30px;
+        font-size: 16px;
+        font-family: sans-serif;
+    }
+    @media (max-width:768px) {
+        &__container{
+            padding:20px;
+        }
+        &__row{
+            display: block;
+            
+            
+        }
+        &__img{
+            height: 250px;
+            margin-bottom: 20px;
+        }
+        &__title{
+            font-size: 25px;
+        }
+        &__text{
+            font-size: 15px;
+            line-height: 25px;
+        }
+    }
+}
