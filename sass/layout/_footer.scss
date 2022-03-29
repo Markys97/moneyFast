@@ -1,0 +1,35 @@
+.footer{
+    width: 100%;
+    background: #03045e;
+    color:white;
+    font-size: 18px;
+    &__container{
+        padding:20px 0;
+        
+
+    }
+    &__number{
+        text-align: center;
+        margin-bottom: 10px;
+        a{
+            color:white;
+            &:hover{
+                display: inline-block;
+                border-bottom: 1px solid white;
+            }
+        }
+        
+       
+    }
+    &__email{
+        text-align: center;
+        a{
+            color:white;
+            &:hover{
+                display: inline-block;
+                border-bottom: 1px solid white;
+            }
+        }
+       
+    }
+}

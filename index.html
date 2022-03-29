@@ -9,10 +9,10 @@
 </head>
 <body>
     <div class="main">
-        <header class="header">
+        <header class="header" id="header">
             <div class="header__container _container">
                 <div class="header__logo logo">
-                    MoneyFast
+                  <a href="#baner">MoneyFast</a>
                 </div>
                 <nav class="header__menu">
                     <ul class="header__menu-list">
@@ -20,10 +20,10 @@
                             <a href="#about" class="header__menu-link">A Propos</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Nos Tarifs</a>
+                            <a href="#tarif" class="header__menu-link">Nos Tarifs</a>
                         </li>
                         <li class="header__menu-item">
-                            <a href="#" class="header__menu-link">Contact</a>
+                            <a href="#footer" class="header__menu-link">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -34,7 +34,7 @@
                 </div>
             </div>
         </header>
-        <section class="baner">
+        <section class="baner" id="baner">
             <div class="baner__container _container">
                 <div class="baner__row">
                     <div class="baner__img">
@@ -75,6 +75,54 @@
                 </div>
             </div>
         </section>
+        <section class="tarif" id="tarif">
+            <div class="tarif__container _container">
+                <h2 class="tarif__title">Nos Tarifs</h2>
+                <p class="tarif__text">
+                    Dans l'optique de faciliter la vie des ressortissants africains en russie en ce temps de crise,
+                    <span class="tarif__important"> MoneyFast</span> facture de <span class="tax">3%</span> de la somme 
+                    a envoyer vers la Russie, ceci est le meme tarif que western union utilisait avant l'arrret de leur service en Russie.  
+
+                </p>
+                
+                <div class="tarif__send">
+                    <label for="send" class="tarif__label">Entrez le montant a envoyer en fcfa :</label>
+                    <p class="tarif__input">
+                        <input type="text" id="send" placeholder="Ex :  1000000">
+                    </p>
+                    <div class="tarif__result">
+                        <h3 class="tarif__subtitle">Montant a recevoir</h3>
+                        <div class="tarif__pricing">
+                            <div class="tarif__pricing-item">
+                                <h4 class="tarif__pricing-title">dollars :</h4>
+                                <div class="tarif__pricing-price">
+                                   <span class="tarif__pricing-number tarif__pricing-number--dollars">0</span> $
+                                </div>
+                            </div>
+                            <div class="tarif__pricing-item">
+                                <h4 class="tarif__pricing-title">roubles :</h4>
+                                <div class="tarif__pricing-price">
+                                   <span class="tarif__pricing-number tarif__pricing-number--rouble">0</span> ₽
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="tarif__btn"> evaluez la transaction</button>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="footer">
+            <div class="footer__container _container">
+                <p class="footer__number">
+                    <span >Tel:</span>
+                    <a href="tel:+79200664894"> +7 920 066 48 94</a>
+                </p>
+                <p class="footer__email">
+                    <span >Email:</span>
+                    <a href = "mailto:brexejunior@gmail.com"> brexejunior@gmail.com</a>
+                </p>
+            </div>
+        </footer>
     </div>
     
 

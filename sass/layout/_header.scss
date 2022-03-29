@@ -2,18 +2,23 @@
     width: 100%;
     font-family: serif;
     background: #fff;
-    border-bottom: 1px solid;
+    
     position: relative;
     &__container{
         min-height: 80px;
         display: flex;
         align-items: center;
     }
-    &__logo{
-        font-size: 37px;
-        color:#0077b6;
+    &__logo {
+       
         flex: 1 1 auto;
-        font-weight: 800;
+        
+       
+        a{
+            font-size: 37px;
+            color:#0077b6;
+            font-weight: 800;
+        }
     }
     &__burger{
         width: 40px;
@@ -96,6 +101,10 @@
            
         }
     }
+}
+
+.link-active{
+    border-bottom: 1px solid #0077b6;
 }
 
 

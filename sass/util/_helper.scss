@@ -4,3 +4,11 @@
     padding:0 15px;
 }
 
+
+.header-fix{
+    position: fixed!important;
+    top:0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid #0077b6; ;
+}
