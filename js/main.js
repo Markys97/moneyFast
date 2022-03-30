@@ -16,7 +16,7 @@ const getDollars=()=>{
 }
 const getRouble=()=>{
     let dollars=  getDollars()
-    let rouble= dollars * 81;
+    let rouble= dollars * 77;
 
     return rouble.toFixed(2)
 }
