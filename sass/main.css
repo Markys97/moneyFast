@@ -381,6 +381,11 @@ ul {
   letter-spacing: 2px;
 }
 
+.tarif__totalPay-details {
+  display: inline-block;
+  margin-left: 20px;
+}
+
 .tarif__btn {
   display: -webkit-box;
   display: -ms-flexbox;
