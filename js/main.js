@@ -5,7 +5,9 @@ let menuLinks= document.querySelectorAll('.header__menu-link');
 let dollarsElt= document.querySelector('.tarif__pricing-number--dollars')
 let roublesElt= document.querySelector('.tarif__pricing-number--rouble')
 let montantTransfert= document.querySelector('.tarif__input input')
-let btnConvertisor= document.querySelector('.tarif__btn')
+let btnConvertisor= document.querySelector('.tarif__btn');
+let totalPayElt= document.querySelector('.tarif__totalPay-number');
+
 
 const getDollars=()=>{
    
@@ -21,6 +23,19 @@ const getRouble=()=>{
     return rouble.toFixed(2)
 }
 
+const getTotalPay=()=>{
+   
+    let montanTransfertValue= parseFloat(montantTransfert.value);
+    let netPaye= (montanTransfertValue *3)/100;
+
+    return netPaye+montanTransfertValue;
+
+    
+}
+
+montantTransfert.addEventListener('input',e=>{
+    totalPayElt.textContent=getTotalPay();
+})
 
 burgerBtn.addEventListener('click',e=>{
     menu.classList.toggle('open-menu')

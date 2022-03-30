@@ -366,6 +366,21 @@ ul {
   outline: none;
 }
 
+.tarif__totalPay {
+  margin-bottom: 10px;
+  font-weight: 800;
+}
+
+.tarif__totalPay-title {
+  font-size: 20px;
+}
+
+.tarif__totalPay-number {
+  display: inline-block;
+  margin-right: 5px;
+  letter-spacing: 2px;
+}
+
 .tarif__btn {
   display: -webkit-box;
   display: -ms-flexbox;

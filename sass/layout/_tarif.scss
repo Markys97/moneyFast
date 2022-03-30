@@ -57,6 +57,20 @@
             outline: none;
         }
     }
+    &__totalPay{
+        // border:1px solid red;
+        margin-bottom: 10px;
+        font-weight: 800;
+        &-title{
+            font-size: 20px;
+            
+        }
+        &-number{
+            display:inline-block;
+            margin-right: 5px;
+            letter-spacing: 2px;
+        }
+    }
     &__btn{
         display: flex;
         justify-content: center;
