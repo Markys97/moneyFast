@@ -17,8 +17,8 @@ const getDollars=()=>{
     return dollarsValue.toFixed(2)
 }
 const getRouble=()=>{
-    let dollars=  getDollars()
-    let rouble= dollars * 77;
+    let montantTransfertValue=  parseFloat(montantTransfert.value);
+    let rouble= montantTransfertValue * 0.11;
 
     return rouble.toFixed(2)
 }
@@ -61,7 +61,7 @@ menuLinks.forEach((link,index,arr)=>{
 })
 
 btnConvertisor.addEventListener('click',e=>{
-    dollarsElt.textContent=getDollars();
+  
     roublesElt.textContent=getRouble()
 })
 
