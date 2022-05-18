@@ -18,7 +18,7 @@ const getDollars=()=>{
 }
 const getRouble=()=>{
     let montantTransfertValue=  parseFloat(montantTransfert.value);
-    let rouble= montantTransfertValue *0.8/10;
+    let rouble= montantTransfertValue*0.9/10 ;
 
     return rouble.toFixed(2)
 }
